@@ -1,6 +1,7 @@
 name: hello-world
 
-pool: minikube
+pool:
+  vmImage: ubuntu-latest
 
 jobs:
 - job: helloWorld
