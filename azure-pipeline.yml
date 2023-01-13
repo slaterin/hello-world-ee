@@ -3,7 +3,7 @@ name: hello-world
 pool:
   name: minikube
   demands:
-  - myCustomCapability   # exists check for myCustomCapability
+  - mypool-00   # exists check for myCustomCapability
   - Agent.Version -gt 2.000.0
 jobs:
 - job: helloWorld
