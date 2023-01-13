@@ -2,8 +2,6 @@ name: hello-world
 
 pool:
   name: mypool-00
-  demands:
-  - Agent.Version -gt 2.000.0
 jobs:
 - job: helloWorld
   timeoutInMinutes: 10
