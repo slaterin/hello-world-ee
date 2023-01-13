@@ -1,8 +1,10 @@
 name: hello-world
 
-pool: minikube
-  # vmImage: ubuntu-latest
-
+pool:
+  name: minikube
+  demands:
+  - myCustomCapability   # exists check for myCustomCapability
+  - Agent.Version -gt 2.000.0
 jobs:
 - job: helloWorld
   timeoutInMinutes: 10
